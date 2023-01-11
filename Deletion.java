@@ -5,10 +5,11 @@ import java.util.Arrays;
 public class Deletion {
     public static void main(String[] args) {
         String[] s = {"adrine", "phllis", "sasha", "beth"};
-        int removeIndex = 1;
+        int removeIndex = 2;
         for (int i = removeIndex; i < s.length - 1; i++) {
-            s[1]=s[i+1];
+            s[i]=s[i+1];
         }
-        System.out.println("new array after deletion is" + Arrays.toString(s));
+        s[s.length-1] = null;
+        System.out.println("new array after deletion is " + Arrays.toString(s));
     }
 }

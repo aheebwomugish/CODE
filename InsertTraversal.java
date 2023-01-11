@@ -2,7 +2,7 @@
 import java.util.Arrays;
 public class InsertTraversal {
     public static void main(String[] args) {
-        int[] my_array = {25, 14, 56, 15, 36, 56, 77, 18, 29, 49};
+        int[] my_array = {25, 14, 56, 15, 36, 56, 77, 18, 29, 49, 0};
 
         // Insert an element in 3rd position of the array (index->2, value->5)
 
@@ -15,6 +15,7 @@ public class InsertTraversal {
         {
             my_array[i] = my_array[i-1];
         }
+
         my_array[Index_position] = newValue;
         System.out.println("New Array: "+Arrays.toString(my_array));
 
