@@ -24,10 +24,10 @@ public class InsertTraversal {
        int a1= my_array.length;
        int a2= array2.length;
        int c = a1 + a2;
-       int[] A = new int [c];
-       System.arraycopy(my_array, 0, A, 0, a1);
-       System.arraycopy(array2,0, A, a1, a2);
-        System.out.println(Arrays.toString(A));
+       int[] newArray = new int [c];
+       System.arraycopy(my_array, 0, newArray, 0, a1);
+       System.arraycopy(array2,0, newArray, a1, a2);
+        System.out.println(Arrays.toString(newArray));
 
 
         //traversing an array
