@@ -30,7 +30,7 @@ public class InsertTraversal {
         System.out.println(Arrays.toString(newArray));
 
 
-        //traversing an array
+        //traversing an n mai
         String[] S = {"23","24","25"};
         for (String element: S) {
             System.out.println(element);
