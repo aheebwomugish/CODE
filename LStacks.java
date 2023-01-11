@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 public class LStacks {
-    LinkedList<String> list = new LinkedList<>();
+    LinkedList<String> list = new LinkedList<String>();
     //Removes a value from a stack.
     void pop() {
         list.removeLast();
