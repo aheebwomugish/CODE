@@ -19,7 +19,7 @@ public class SelectionSort {
 
     public static void main(String[] args) {
         SelectionSort sort = new SelectionSort();
-        int[] unsorted = {1,3,35,4,3,45};
+        int[] unsorted = {7,3,35,4,1,45};
         int[] sorted =  sort.sortArray(unsorted);
         System.out.println(Arrays.toString(sorted));
     }
