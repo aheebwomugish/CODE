@@ -1,24 +1,63 @@
 public class AStacks {
-public int push(int a){
-    return a;
-
-}
-    public static void main(String[] args) {
-        AStacks stack = new AStacks();
-        AStacks  st = new AStacks();
-        stack.push(2);
-        stack.push(3);
-
-        System.out.println(st.push(30));
-        System.out.println(stack.push(3));
-        System.out.println(st.push(43));
-        System.out.println(st.push(34));
-        System.out.println(stack.pop());
-
-
-    }
-
-    private int pop() {
-        return 0;
-    }
+	
+	int[] arr= new int[4];
+	
+	int top=0;
+	
+	
+	public void push(int value){
+		
+		if(top==4){
+		    System.out.println("Stack is full, you can't add anything from the top!");
+	    }
+		    else{
+		        arr[top]= value;
+		        top++;
+		
+		}
+	
+	
+	}
+	public void show(){
+		for(int i : arr){
+			
+			System.out.print(i +" ");
+		}
+		System.out.println();
+	} 
+	
+	public int pop(){
+		int value=0;
+		
+		if(top==0){
+			
+			System.out.println("Stack is Empty, there is nothing to remove!");
+		}	
+			else{
+				top--;
+		        value= arr[top];
+		        arr[top]= 0;
+			}
+		
+		return value;
+	}
+	
+	public static void main(String[] args){
+		
+		AStacks item= new AStacks();
+		item.pop();
+		item.push(24);
+		item.push(60);
+		item.push(14);
+		item.push(256);
+		item.show();
+		item.push(11);
+		item.pop();
+		item.show();
+		item.pop();
+		item.show();
+		item.push(99);
+		item.show();
+	}
+	
 }
